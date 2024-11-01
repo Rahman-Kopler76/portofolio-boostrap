@@ -131,60 +131,52 @@
     <!-- akhir aprojects -->
 
     <!-- contact -->
-<section id="contact">
-  <div class="contact">
-    <div class="row text-center mb-3">
-      <div clas="col">
-        <h2>contact me</h2>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <div class="alert alert-warning alert-dismissible fade show d-none my-alert" role="alert">
-          <strong>Terimaksih!</strong> Pesan andasudah kami terima.
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Contact Me</h2>
+          </div>
         </div>
-        <form name="wpu-contact-form">
-          <div class="mb-3">
-            <label for="name" class="form-label">Nama Lengkap</label>
-            <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
-            <div id="name" class="form-text"></div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="alert alert-warning alert-dismissible fade show d-none my-alert" role="alert">
+              <strong>Terima kasih!</strong> Pesan anda sudah kami terima.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <form name="wpu-contact-form">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="name" name="nama" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Anda</label>
+                <input type="email" class="form-control" id="email" name="email" />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan Anda</label>
+                <textarea class="form-control" id="pesan" name="pesan" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+            </form>
           </div>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email Anda</label>
-            <input type="email" class="form-control" id="email" aria-describedby="email" email="email" />
-            <div id="email" class="form-text"></div>
-          </div>
-          <div class="mb-3">
-            <label for="Password" class="form-label">Pesan anda</label>
-            <input type="password" class="form-control" id="Password" aria-describedby="password" password="pasword" />
-          </div>
-          <button type="submit" class="btn btn-primary">kirim</button>
-
-          <button class="btn btn-primary btn-loading d-none" 
-          type="button" disabled>
-            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-            Loading...
-          </button>
-        </form>
+        </div>
       </div>
-    </div>
-  </div>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0d6efd" fill-opacity="1" d="M0,32L26.7,69.3C53.3,107,107,181,160,197.3C213.3,213,267,171,320,176C373.3,181,427,235,480,266.7C533.3,299,587,309,640,266.7C693.3,224,747,128,800,90.7C853.3,53,907,75,960,106.7C1013.3,139,1067,181,1120,170.7C1173.3,160,1227,96,1280,74.7C1333.3,53,1387,75,1413,85.3L1440,96L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
-</section>
-    <!-- akhir contant -->
+    </section>
+    <!-- akhir contact -->
 
     <!-- footer -->
     <footer class="bg-primary text-white text-center p-5">
-      <p>created with <i class="bi bi-arrow-through-heart-fill text-danger"></i> by <a href="https://www.instagram.com/rsyaifur723?igsh=MXBzZjh4N2Q2ZDVj" class="text-white fw-bold">Syaifur Rahman</a></p>
+      <p>created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.instagram.com/rsyaifur723" class="text-white fw-bold">Syaifur Rahman</a></p>
     </footer>
     <!-- akhir footer -->
 
-    <!-- Optional JavaScript; choose one of the two! -->
- 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
@@ -192,35 +184,31 @@
 
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbz4MFa3rtOVdKtaR5IIoUvyffHsmKZ0iYo4Prh7V40oIN_1pEIGnRZRbrbA2Y78AemW/exec'
-      const form = document.forms['wpu-contact-form']
+      const form = document.forms['wpu-contact-form'];
       const btnKirim = document.querySelector('.btn-kirim');
       const btnLoading = document.querySelector('.btn-loading');
       const myAlert = document.querySelector('.my-alert');
-    
-      form.addEventListener('submit', e => {
-        e.preventDefault()
 
-        btnLoading.classList.toggle('d-done');
-        btnKirim.classList.toggle('d-done');
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+
+        // Tampilkan tombol loading, sembunyikan tombol kirim
+        btnLoading.classList.remove('d-none');
+        btnKirim.classList.add('d-none');
+
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
           .then(response => {
-            // tampilkan tombol kirim,hilangkan.tombol.loading
-            btnLoading.classList.toggle('d-done');
-            btnKirim.classList.toggle('d-done');
-            // tampilkan alert
-            myAlert.classlist.toggle('d-done');
-            // reset formnya
+            // Sembunyikan tombol loading, tampilkan tombol kirim
+            btnLoading.classList.add('d-none');
+            btnKirim.classList.remove('d-none');
+            // Tampilkan alert
+            myAlert.classList.remove('d-none');
+            // Reset form
             form.reset();
-            console.log('Success!', response)
+            console.log('Success!', response);
           })
-          .catch(error => console.error('Error!', error.message))
-      })
+          .catch(error => console.error('Error!', error.message));
+      });
     </script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
   </body>
 </html>
